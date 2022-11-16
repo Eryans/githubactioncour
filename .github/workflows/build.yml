@@ -8,5 +8,5 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
-      - run: cd my-app && npm install
+      - run: cd my-app && npm install && npm run cypress:headless
       - run: cd my-app && npm run build && ls -lhar
