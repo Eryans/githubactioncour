@@ -9,5 +9,5 @@ jobs:
         with:
           node-version: '14'
       - run: cd my-app && npm install
-      - run: npm run build
+      - run: cd my-app && npm run build
       - run: ls -lha
