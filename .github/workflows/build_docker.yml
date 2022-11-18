@@ -15,5 +15,5 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: ghcr.io/Eryans/nodejs:latest
+          tags: ghcr.io/eryans/nodejs:latest
           target: nodejs
