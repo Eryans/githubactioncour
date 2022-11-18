@@ -15,4 +15,4 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.SSH_KEY }}
 
-      - run: ssh ${{ secrets.SSH_USER}}@${{ secrets.SSH_HOST }}
+      - run: ssh ${{ secrets.SSH_USER}}@${{ secrets.SSH_HOST }} "cd /home/${{ secrets.SSH_HOST }}/githubaction_lesson && docker compose up -d"
